@@ -1,0 +1,2 @@
+# qr-admin-portal
+MyQrAttendanceApps
