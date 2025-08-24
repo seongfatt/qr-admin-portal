@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Attendance Admin Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Admin Portal</h1>
+        </header>
+
+        <div id="login-section">
+            <h2>Admin Login</h2>
+            <form id="login-form">
+                <input type="email" id="email-input" placeholder="Admin Email" required>
+                <input type="password" id="password-input" placeholder="Password" required>
+                <button type="submit">Log In</button>
+                <p id="login-error" class="error-message"></p>
+            </form>
+        </div>
+
+        <div id="admin-dashboard" class="hidden">
+            <div class="header-row">
+                <h2>Manage Users</h2>
+                <button id="logout-button">Log Out</button>
+            </div>
+            
+            <table id="users-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Plan</th>
+                        <th>Update Plan</th>
+                    </tr>
+                </thead>
+                <tbody id="users-table-body">
+                    </tbody>
+            </table>
+            
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
